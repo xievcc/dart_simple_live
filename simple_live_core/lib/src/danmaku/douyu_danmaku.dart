@@ -17,7 +17,7 @@ class DouyuDanmaku implements LiveDanmaku {
   Function(String msg)? onClose;
   @override
   Function()? onReady;
-  String serverUrl = "wss://danmuproxy.douyu.com:8506";
+  String serverUrl = "wss://danmuproxy.douyu.com:8502";
 
   WebScoketUtils? webScoketUtils;
 
