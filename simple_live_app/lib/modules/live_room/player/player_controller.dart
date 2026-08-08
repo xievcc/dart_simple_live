@@ -258,7 +258,7 @@ mixin PlayerSystemMixin on PlayerMixin, PlayerStateMixin, PlayerDanmakuMixin {
       overlays: SystemUiOverlay.values,
     );
 
-    await setPortraitOrientation();
+    //await setPortraitOrientation();
     if (Platform.isAndroid || Platform.isIOS || Platform.isMacOS) {
       // 亮度重置,桌面平台可能会报错,暂时不处理桌面平台的亮度
       try {
@@ -279,7 +279,7 @@ mixin PlayerSystemMixin on PlayerMixin, PlayerStateMixin, PlayerDanmakuMixin {
       SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
       if (!isVertical.value) {
         //横屏
-        setLandscapeOrientation();
+       // setLandscapeOrientation();
       }
     } else {
       windowManager.setFullScreen(true);
@@ -292,7 +292,7 @@ mixin PlayerSystemMixin on PlayerMixin, PlayerStateMixin, PlayerDanmakuMixin {
     if (Platform.isAndroid || Platform.isIOS) {
       SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge,
           overlays: SystemUiOverlay.values);
-      setPortraitOrientation();
+     // setPortraitOrientation();
     } else {
       windowManager.setFullScreen(false);
     }
