@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: dev   # 如果你改的是 master，就改成 master
+          ref: master   # 如果你改的是 master，就改成 master
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
